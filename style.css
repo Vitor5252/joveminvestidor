@@ -1,0 +1,466 @@
+/* Design parte cinza */
+#faq {
+    background-color: #e2e2e2; 
+    padding: 5px 0; 
+    color: #333; 
+}
+
+#faq .container {
+    max-width: 960px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+#faq .faq-item h3 {
+    color: #000000; 
+    margin-top: 30px; 
+    font-size: 40px; 
+    font-family: serif; 
+}
+
+#faq .faq-item p {
+    font-size: 20px; 
+    line-height: 1.5; 
+    margin-top: 10px; 
+    font-family: serif; 
+}
+
+/* Design parte preta */
+.footer-container {
+    background-color: #272727;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 180px; /* Ajuste a largura conforme necessário */
+    margin-bottom: 20px; /* Espaço entre a logo e os ícones sociais */
+}
+
+.footer-disclaimer {
+    font-size: 14px;
+    color: #aaaaaa; /* cor cinza clara para destaque sutil */
+    max-width: 600px;
+    margin: 20px auto 0; /* adicionei margem superior para separar dos ícones */
+    line-height: 1.4;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Espaço extra antes do aviso */
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.copyright {
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* TEXTO EM NEGRITO */
+#faq .faq-item strong {
+    font-weight: bold;
+}
+/* ----- */
+
+
+/* CABEÇALHO */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white; /* Assegura fundo branco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100%;
+    height: 140px; /* Ajustada para combinar com o padding-top */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Mantém o cabeçalho estendendo-se por toda a largura da tela */
+    max-width: 1200px; /* Limita a largura do conteúdo interno */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 0 20px; /* Mantém o conteúdo afastado das bordas */
+}
+
+.body {
+    padding-top: 130px; /* Ajustado para garantir que o conteúdo comece abaixo do cabeçalho */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;  /* Ajuste conforme necessário */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-left: 30px;  /* Aumente o espaçamento entre os itens */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600; 
+    padding: 10px 15px;  
+    transition: color 0.3s, background-color 0.3s, transform 0.3s; 
+    border-radius: 5px;  
+    font-size: 16px;  
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #ffffff;  
+    background-color: #01ce5d;  
+    transform: translateY(-2px);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .header .logo {
+        transform: scale(0.8); /* Reduz a logo para 80% do tamanho original */
+    }
+
+    .header-container {
+        flex-direction: row; /* Mantém tudo em uma única linha */
+        justify-content: space-between; /* Distribui o conteúdo uniformemente */
+        align-items: center;
+        padding: 0 10px; /* Reduz o padding lateral para economizar espaço */
+    }
+
+    .nav {
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-around; /* Espaça os itens uniformemente */
+        width: 100%; /* Garante que a lista ocupe toda a largura do nav */
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-item {
+        margin: 0; /* Remove margens adicionais para maximizar o espaço */
+    }
+
+    .nav-link {
+        font-size: 14px; /* Ajusta o tamanho da fonte para melhor legibilidade */
+        padding: 10px 5px; /* Ajusta o padding para melhor toque */
+    }
+}
+
+/* DESIGN CÁLCULO DE JUROS COMPOSTOS */
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-field input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-align .options {
+    display: flex;
+    align-items: center;
+}
+
+.options span {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.options input {
+    margin-right: 5px;
+}
+
+/* TRANSIÇÃO INICIAL DA PÁGINA */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* .body-animation {
+    animation: slideDown 1s ease-out forwards;
+} */
+
+/* AVISO DE COOKIES */
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #575757;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#cookie-banner p {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#cookie-banner button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12px;
+}
+
+#cookie-banner button:hover {
+    background-color: #ddd;
+}
+/* ---------------- */
+
+
+/* Estilização da seção de resultados */
+#result {
+    display: none;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px;
+}
+
+#result h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.total .line {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #01ce5d;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(3, 3, 3, 0.1);
+    display: flex;
+    flex-direction: column; /* Altera isso para column */
+    align-items: center; /* Alinha ao centro */
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.total .line span {
+    text-align: center; /* Alinha o texto ao centro */
+    width: 100%; /* Garante que o span ocupe a largura total */
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+}
+
+.total .line div {
+    margin-top: 10px; /* Adiciona espaçamento entre o título e o valor */
+    font-size: 24px; /* Aumenta o tamanho da fonte */
+    font-weight: 700;
+    color: #000000;
+}
+
+.total .line.final {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 767px) {
+    .total .line {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .total .line span {
+        font-size: 18px; 
+    }
+
+    .total .line div {
+        font-size: 22px; 
+    }
+}
+
+.rs-acumulado {
+    color: #1aca23 !important; 
+}
+
+#undo {
+    font-family: "Warren Display";
+    font-size: 20px;
+    background-color: #01ce5d;
+    color: #fff;
+    padding: 10px 20px; 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;  
+}
+
+#undo:hover {
+    background-color: #018f40;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.currency, .percent {
+    position: absolute;
+    left: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"] {
+    padding-left: 30px; /* Ajuste o valor conforme necessário */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Mudando a cor dos botões de rádio para verde */
+input[type="radio"] {
+    accent-color: rgb(10, 168, 10);
+}
+
+/* Tamanho de fonte e espaçamento ajustados para dispositivos móveis */
+  @media (max-width: 575px) {
+    .highlight-green {
+      font-size: 43px;
+      line-height: 48px;
+    }
+  }
+
+/* Mudando a cor dos "Juros Compostos" */
+.highlight-green {
+    color: #01ce5d; 
+}
+
+/* Centralizando as informações no celular */
+@media (max-width: 768px) {
+    #evaluate .container {
+        width: 100%; /* Confirme que ocupa toda a largura */
+        padding: 0; /* Remove qualquer padding interno */
+        margin: 0 auto; /* Centraliza o contêiner */
+        box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    }
+
+    #evaluate .container .text,
+    #evaluate .container .text h2,
+    #evaluate .container .text p {
+        text-align: center; /* Centraliza o texto */
+        margin: 0 auto; /* Remove qualquer margem desnecessária */
+        padding: 0; /* Remove qualquer padding desnecessário */
+        width: 100%; /* Garante que os elementos de texto usem toda a largura disponível */
+    }
+}
+
+/* Tamanho do texto do rodapé dispositivos móveis */
+@media (max-width: 768px) {
+    .footer-disclaimer {
+        padding: 20px; 
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.social-icon img {
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+}
+
+/* Estilo para os links do menu */
+.nav-link {
+    transition: transform 0.3s ease; 
+}
+
+.nav-link:hover {
+    transform: scale(1.2); 
+}
